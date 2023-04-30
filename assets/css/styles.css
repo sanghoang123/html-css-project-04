@@ -16,6 +16,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background-color: #fffaf5;
 }
 
 /* Common */
@@ -50,7 +51,7 @@ button {
 .btn {
     display: inline-block;
     --height: 56px;
-    min-width: 130px;
+    min-width: 182px;
     padding: 0 20px;
     text-align: center;
     height: var(--height);
@@ -103,6 +104,7 @@ button {
 }
 
 .header-action__btn {
+    min-width: 117px;
     --height: 50px;
     border: 1px solid rgba(0, 9, 88, 0.7);
     font-size: 1.4rem;
@@ -111,4 +113,63 @@ button {
 
 .header-action__btn:hover {
     background-color: #000958;
+}
+
+/* Hero */
+.hero {
+    margin-top: 74px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__media {
+    display: flex;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    background: #fe997b;
+    border-radius: 16px;
+    border: 3px solid #fff;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-left {
+    left: -56px;
+    bottom: 10px;
+}
+
+.hero__decor-right {
+    top: 17px;
+    right: -43px;
+}
+
+.hero__img-wrap--small {
+    width: 186px;
+    height: 244px;
+    background-color: #faa7ad;
+    align-self: flex-end;
+    margin: 0 0 -58px -24px;
+    border: 2px solid #fddfe1;
 }
